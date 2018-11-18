@@ -1,0 +1,11 @@
+DEPTH = 256;
+WIDTH = 16;
+ADDRESS_RADIX = HEX;
+DATA_RADIX = BIN;
+CONTENT
+BEGIN
+00 : 1000001001000000; -- MOV R("A"), STALA         (a=stala)  
+01 : 0000000000000111; -- 1
+02 : 1010101001000000; -- ROL R("A"), A             (a= a rol value_from_address) 
+03 : 0000000000000001; -- 05 -- w tym wypadku a rol a 
+END;
